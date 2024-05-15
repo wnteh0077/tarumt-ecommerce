@@ -4,6 +4,7 @@ import gsap from "gsap";
 import MenuStar from "./MenuStar";
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 interface MenuProps {
     color: "yellow" | "green",
@@ -33,10 +34,10 @@ const Menu: React.FC<MenuProps> = ({ color }) => {
         <>
             <div className="hidden absolute w-full top-[7vh] lg:flex justify-between items-center px-10">
                 <div>
-                    <img className="cursor-pointer" src={`${color}-logo.png`} width={100} onClick={() => { router.push("/") }}/>
+                    <Image alt="" className="cursor-pointer" src={`${color}-logo.png`} width={100} onClick={() => { router.push("/") }}/>
                 </div>
                 <div className="flex gap-2">
-                    <img className="cursor-pointer scale-50" src="market.png" width={64} onClick={ openCart } />         
+                    <Image alt="" className="cursor-pointer scale-50" src="market.png" width={64} onClick={ openCart } />         
                     <MenuStar onClick={() => { router.push("/shop") }} />
                 </div>
             </div>

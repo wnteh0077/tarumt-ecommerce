@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-
+import Image from "next/image";
 interface ProductProps {
     id: number,
     name: string,
@@ -94,7 +94,7 @@ const ProductForm = () => {
                 <input type="number" placeholder="price" value={price} onChange={(e) => {setPrice(e.target.valueAsNumber)}} />
                 <input type="file" accept="image/jpeg, image/png, image/jpg, image/wbep" onChange={handleFileChange} />
                 <button type="submit" disabled={buttonDisabled}>Add</button>
-                <img src={imageURL} />
+                <Image alt={name} src={imageURL} />
             </form>
             <div>
             <ul>

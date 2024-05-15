@@ -3,6 +3,7 @@
 import Marquee from "@/app/components/Marquee";
 import Menu from "@/app/components/Menu";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 interface ProductProps {
     id: number,
@@ -35,9 +36,9 @@ const Shop = () => {
                 <p className="text-theme-green text-xl arial">Get ready to mark the culmination of your college journey with our exclusive graduation products</p>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-20 w-full lg:px-40 pb-6">
                     {products.map((product) => (
-                        <div className="h-[60vh] flex justify-center items-center flex-col gap-3">
+                        <div key={product.id} className="h-[60vh] flex justify-center items-center flex-col gap-3">
                             <div className="flex justify-center items-center w-[40vh] h-[40vh] overflow-hidden">
-                                <img src={product.imageUrl} className="scale-75 hover:scale-90 hover:-rotate-6 duration-500" />
+                                <Image alt={product.name} src={product.imageUrl} className="scale-75 hover:scale-90 hover:-rotate-6 duration-500" />
                             </div>
                             <h1 className="text-theme-green text-3xl balgin text-center">{product.name}</h1>
                             <p className="text-theme-green text-xl arial">RM {product.price.toFixed(2)}</p>

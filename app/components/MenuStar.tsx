@@ -3,6 +3,7 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
+import Image from "next/image";
 
 interface MenuStarProps {
     onClick: () => void,
@@ -24,8 +25,8 @@ const MenuStar: React.FC<MenuStarProps> = ({ onClick }) => {
     return (
         <>
             <div className="relative cursor-pointer flex justify-center items-center"ref={container} onClick={onClick}>
-                <img className="menu-star" src="menu-star-green.png" width={50} />
-                <img className="absolute" src="pink-menu.svg" width={25} />
+                <Image alt="" className="menu-star" src="menu-star-green.png" width={50} />
+                <Image alt="" className="absolute" src="pink-menu.svg" width={25} />
             </div>
         </>
     )

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 interface ProductProps {
     id: number,
@@ -38,7 +39,7 @@ const Dashboard = () => {
                     <div key={product.id} className="text-theme-yellow text-xs lg:text-xl overflow-hidden py-10 grid grid-cols-10 w-full border-b border-theme-yellow arial">
                         <h1 className="col-span-3">{product.name}</h1>
                         <h1 className="col-span-1 justify-self-center">{product.price.toFixed(2)}</h1>
-                        <img src={product.imageUrl} className="h-[5vh] col-span-2 justify-self-center" />
+                        <Image alt={product.name} src={product.imageUrl} className="h-[5vh] col-span-2 justify-self-center" />
                         <h1 className="col-span-2 justify-self-center">{product.createdAt.toString()}</h1>
                         <h1 className="col-span-2 justify-self-center">{product.updatedAt.toString()}</h1>
                     </div>

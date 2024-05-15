@@ -3,6 +3,7 @@
 import Marquee from "./components/Marquee";
 import Menu from "./components/Menu";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Index() {
 
@@ -14,15 +15,15 @@ export default function Index() {
       <Menu color="yellow" />
       <div className="w-screen h-screen pt-[6vh] flex flex-col lg:flex-row">
         <div className="lg:w-3/5 h-full flex justify-center items-center bg-theme-green">
-          {selectedProduct === "Starburst" && (<img src="https://tarumt-ecommerce.s3.amazonaws.com/Features/Starburst.png" width={700} />)}
-          {selectedProduct === "Hopkins" && (<img src="https://tarumt-ecommerce.s3.amazonaws.com/Features/Hopkins.png" width={700} />)}
-          {selectedProduct === "Mini Grad" && (<img src="https://tarumt-ecommerce.s3.amazonaws.com/Features/MiniGrad.png" width={700} />)}
+          {selectedProduct === "Starburst" && (<Image alt="" src="https://tarumt-ecommerce.s3.amazonaws.com/Features/Starburst.png" width={700} />)}
+          {selectedProduct === "Hopkins" && (<Image alt="" src="https://tarumt-ecommerce.s3.amazonaws.com/Features/Hopkins.png" width={700} />)}
+          {selectedProduct === "Mini Grad" && (<Image alt="" src="https://tarumt-ecommerce.s3.amazonaws.com/Features/MiniGrad.png" width={700} />)}
         </div>
         <div className="lg:w-2/5 h-full px-10 bg-theme-pink-100">
           <div className="flex flex-col gap-5 lg:pt-28 pt-3 justify-center text-theme-green">
             <h1 className="text-4xl uppercase balgin">Graduation Flowers</h1>
             <p className="text-xl arial hidden lg:block">
-              Celebrate graduation with our vibrant bouquet symbolizing success and new beginnings. Bursting with roses, lilies, and daisies, it's a perfect gift to mark this milestone.
+              Celebrate graduation with our vibrant bouquet symbolizing success and new beginnings. Bursting with roses, lilies, and daisies, its a perfect gift to mark this milestone.
             </p>
             <div className="uppercase balgin">
               <h3 className="pb-2">Bouquets</h3>

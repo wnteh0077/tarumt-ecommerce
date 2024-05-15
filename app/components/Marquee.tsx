@@ -3,6 +3,7 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
+import Image from "next/image";
 
 interface MarqueeProps {
     children: React.ReactNode;
@@ -41,27 +42,27 @@ const Marquee: React.FC<MarqueeProps> = ({ children }) => {
                 <div className="marquee leading-[5.7vh]">
                     {children}
                 </div>
-                <img className="marquee h-[2.5vh] self-center" src="/green-star.svg" />
+                <Image alt="" className="marquee h-[2.5vh] self-center" src="/green-star.svg" />
                 <div className="marquee leading-[5.7vh]">
                     {children}
                 </div>
-                <img className="marquee h-[2.5vh] self-center" src="/green-star.svg" />
+                <Image alt="" className="marquee h-[2.5vh] self-center" src="/green-star.svg" />
                 <div className="marquee leading-[5.7vh]">
                     {children}
                 </div>
-                <img className="marquee h-[2.5vh] self-center" src="/green-star.svg" />
+                <Image alt="" className="marquee h-[2.5vh] self-center" src="/green-star.svg" />
                 <div className="marquee leading-[5.7vh]">
                     {children}
                 </div>
-                <img className="marquee h-[2.5vh] self-center" src="/green-star.svg" />
+                <Image alt="" className="marquee h-[2.5vh] self-center" src="/green-star.svg" />
                 <div className="marquee leading-[5.7vh]">
                     {children}
                 </div>
-                <img className="marquee h-[2.5vh] self-center" src="/green-star.svg" />
+                <Image alt="" className="marquee h-[2.5vh] self-center" src="/green-star.svg" />
                 <div className="marquee leading-[5.7vh]">
                     {children}
                 </div>
-                <img className="marquee h-[2.5vh] self-center" src="/green-star.svg" />
+                <Image alt="" className="marquee h-[2.5vh] self-center" src="/green-star.svg" />
                 <div className="marquee leading-[5.7vh]">
                     {children}
                 </div>
