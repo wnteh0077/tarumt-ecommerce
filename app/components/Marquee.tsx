@@ -39,6 +39,7 @@ const Marquee: React.FC<MarqueeProps> = ({ children }) => {
                             z-50
                             balgin" 
                     ref={container}>
+                        
                 <div className="marquee leading-[5.7vh]">
                     {children}
                 </div>

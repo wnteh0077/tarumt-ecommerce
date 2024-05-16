@@ -38,7 +38,7 @@ const Shop = () => {
                     {products.map((product) => (
                         <div key={product.id} className="h-[60vh] flex justify-center items-center flex-col gap-3">
                             <div className="flex justify-center items-center w-[40vh] h-[40vh] overflow-hidden">
-                                <Image  height={0} width={0} alt={product.name} src={product.imageUrl} className="scale-75 hover:scale-90 hover:-rotate-6 duration-500" />
+                                <Image  height={0} width={400} alt={product.name} src={product.imageUrl} className="scale-75 hover:scale-90 hover:-rotate-6 duration-500" />
                             </div>
                             <h1 className="text-theme-green text-3xl balgin text-center">{product.name}</h1>
                             <p className="text-theme-green text-xl arial">RM {product.price.toFixed(2)}</p>

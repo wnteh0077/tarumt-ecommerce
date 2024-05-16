@@ -55,22 +55,19 @@ const getSignedURL = async (fileName: string, contentType: string) => {
 };
 
 export async function GET(req: NextRequest, res: NextResponse) {
-
     try {
         const products = await prismadb.product.findMany();
-    
         return NextResponse.json(products);
     } catch (error) {
-        NextResponse.json({ error: 'Failed to fetch products' });
+        console.error("Failed to fetch products:", error);
+        return NextResponse.json({ error: 'Failed to fetch products' });
     }
-
 }
-
 export const POST = async (request: NextRequest) => {
     try {
         const formData = await request.formData();
         const fileInput = formData.get("file") as File;
-        
+
         if (!fileInput) {
             return NextResponse.json({ error: "No file found in form data."});
         }
