@@ -38,23 +38,6 @@ const ProductForm = () => {
         }
     };
 
-    const handleDelete = async (id: number) => {
-        
-        try {
-            await fetch('/api/product', {
-                method: 'DELETE',
-                body: JSON.stringify({id}),
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            });
-            location.reload();
-
-        } catch (error) {
-            console.error("Error deleting product:", error);
-        }
-    }
-
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const formData = new FormData();
@@ -89,23 +72,14 @@ const ProductForm = () => {
 
     return (
         <>
-            <form onSubmit={handleSubmit}>
-                <input type="text" placeholder="name" value={name} onChange={(e) => {setName(e.target.value)}} />
-                <input type="number" placeholder="price" value={price} onChange={(e) => {setPrice(e.target.valueAsNumber)}} />
-                <input type="file" accept="image/jpeg, image/png, image/jpg, image/wbep" onChange={handleFileChange} />
-                <button type="submit" disabled={buttonDisabled}>Add</button>
-                <Image alt={name} src={`${imageURL}`} height={30} width={30} />
-            </form>
-            <div>
-            <ul>
-                {products.map((product) => (
-                    <li key={product.id}>
-                        {product.name}
-                        {product.price}
-                        <button onClick={() => handleDelete(product.id)}>Delete</button>
-                    </li> 
-                ))}
-            </ul>
+            <div className="h-screen w-screen justify-center items-center bg-themem-yellow z-50 ">
+                <form onSubmit={handleSubmit}>
+                    <input type="text" placeholder="name" value={name} onChange={(e) => {setName(e.target.value)}} />
+                    <input type="number" placeholder="price" value={price} onChange={(e) => {setPrice(e.target.valueAsNumber)}} />
+                    <input type="file" accept="image/jpeg, image/png, image/jpg, image/wbep" onChange={handleFileChange} />
+                    <button type="submit" disabled={buttonDisabled}>Add</button>
+                    <Image alt={name} src={`${imageURL}`} height={30} width={30} />
+                </form>
             </div>
         </>
     );
