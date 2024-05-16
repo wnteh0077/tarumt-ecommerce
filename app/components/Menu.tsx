@@ -34,10 +34,10 @@ const Menu: React.FC<MenuProps> = ({ color }) => {
         <>
             <div className="hidden absolute w-full top-[7vh] lg:flex justify-between items-center px-10">
                 <div>
-                    <Image alt="" className="cursor-pointer" src={`${color}-logo.png`} width={100} onClick={() => { router.push("/") }}/>
+                    <Image alt="" className="cursor-pointer" src={`/${color}-logo.png`} width={100} height={0}  onClick={() => { router.push("/") }}/>
                 </div>
                 <div className="flex gap-2">
-                    <Image alt="" className="cursor-pointer scale-50" src="market.png" width={64} onClick={ openCart } />         
+                    <Image alt="" className="cursor-pointer scale-50" src="/market.png" width={64} height={0}  onClick={ openCart } />         
                     <MenuStar onClick={() => { router.push("/shop") }} />
                 </div>
             </div>

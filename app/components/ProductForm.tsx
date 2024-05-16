@@ -94,7 +94,7 @@ const ProductForm = () => {
                 <input type="number" placeholder="price" value={price} onChange={(e) => {setPrice(e.target.valueAsNumber)}} />
                 <input type="file" accept="image/jpeg, image/png, image/jpg, image/wbep" onChange={handleFileChange} />
                 <button type="submit" disabled={buttonDisabled}>Add</button>
-                <Image alt={name} src={imageURL} />
+                <Image alt={name} src={`${imageURL}`} height={30} width={30} />
             </form>
             <div>
             <ul>

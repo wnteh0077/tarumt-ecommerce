@@ -42,27 +42,27 @@ const Marquee: React.FC<MarqueeProps> = ({ children }) => {
                 <div className="marquee leading-[5.7vh]">
                     {children}
                 </div>
-                <Image alt="" className="marquee h-[2.5vh] self-center" src="/green-star.svg" />
+                <Image alt="" width={32} height={0}  className="marquee h-[2.5vh] self-center" src="/green-star.svg" />
                 <div className="marquee leading-[5.7vh]">
                     {children}
                 </div>
-                <Image alt="" className="marquee h-[2.5vh] self-center" src="/green-star.svg" />
+                <Image alt="" width={32} height={0}   className="marquee h-[2.5vh] self-center" src="/green-star.svg" />
                 <div className="marquee leading-[5.7vh]">
                     {children}
                 </div>
-                <Image alt="" className="marquee h-[2.5vh] self-center" src="/green-star.svg" />
+                <Image alt="" width={32} height={0}  className="marquee h-[2.5vh] self-center" src="/green-star.svg" />
                 <div className="marquee leading-[5.7vh]">
                     {children}
                 </div>
-                <Image alt="" className="marquee h-[2.5vh] self-center" src="/green-star.svg" />
+                <Image alt="" width={32} height={0}  className="marquee h-[2.5vh] self-center" src="/green-star.svg" />
                 <div className="marquee leading-[5.7vh]">
                     {children}
                 </div>
-                <Image alt="" className="marquee h-[2.5vh] self-center" src="/green-star.svg" />
+                <Image alt="" width={32} height={0}  className="marquee h-[2.5vh] self-center" src="/green-star.svg" />
                 <div className="marquee leading-[5.7vh]">
                     {children}
                 </div>
-                <Image alt="" className="marquee h-[2.5vh] self-center" src="/green-star.svg" />
+                <Image alt="" width={32} height={0} className="marquee h-[2.5vh] self-center" src="/green-star.svg" />
                 <div className="marquee leading-[5.7vh]">
                     {children}
                 </div>

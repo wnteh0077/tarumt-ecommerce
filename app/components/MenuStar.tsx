@@ -25,8 +25,8 @@ const MenuStar: React.FC<MenuStarProps> = ({ onClick }) => {
     return (
         <>
             <div className="relative cursor-pointer flex justify-center items-center"ref={container} onClick={onClick}>
-                <Image alt="" className="menu-star" src="menu-star-green.png" width={50} />
-                <Image alt="" className="absolute" src="pink-menu.svg" width={25} />
+                <Image alt="" className="menu-star" src="/menu-star-green.png" width={50} height={0}  />
+                <Image alt="" className="absolute" src="/pink-menu.svg" width={25} height={0}  />
             </div>
         </>
     )
