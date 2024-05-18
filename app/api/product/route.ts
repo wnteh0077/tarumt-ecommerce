@@ -5,11 +5,6 @@ import { prismadb } from "@/app/lib/db";
 
 const S3 = new S3Client({
     region: process.env.AWS_BUCKET_REGION,
-    credentials: {
-        secretAccessKey: "tSDk9dWGiEV1dUAo/cP3SZKIJs5zP+N6n837InMI",
-        accessKeyId: "ASIAZTV654JOSLT2Q5EZ",
-        sessionToken: "IQoJb3JpZ2luX2VjEHoaCXVzLXdlc3QtMiJGMEQCIGwBYKo/m3pVO5vI/UUrzu8RLEGApat3knPiWGdUWagYAiAmT0ngFQAsDn5jD7X88WqDJJnHDxroBHO+rjnE7TSGaiqtAgjj//////////8BEAAaDDY2MDc1MTYzOTEzMyIM8q5DBzG+LcIsGwHNKoECFFkLHUbIMkC1H0iWk5uzGen+a2lqEimUI+DIvotSu+ds4SECu4kZ+L/gtAnpiobf3XS1Ys3Brfq+PCCBEKLwzrrcHbgRSLV6bGDkd6OKP5FBZ+NVsV3NMHHVNvFiUXY5Alt7G8iB5e1hWSPa0GbSPUzMP8yBM9fpCEgG/21vpEIXY/vKDLH06ihxdEftI3sIr8TTcreJhOyly3KwsUCHPZmy+Wu/DoAxEnviC1A656e6V7U8HLW6vwaUfI6IzEanFKZ/bFEmqdHtKqzEd6K9W/ANBqQI06e28QmBEYzKLqCMwpZcd6BOszC4Og48nFCxz+vdr6I5nrenxV6wnio55wAwj56gsgY6ngHSOdjibcw1aEVt8x8Bq7+3RKJvzqcDZq5+/Oy8nmpnM7b2L2krPeYKYwqlCZzmguLHmxpr1nSLYRMENJa7ErWLXaE0RveD/yx7wugkXabeG3ra67ynz0Un5r+OEJWHFkHQDAThq3/r9lhQxNp7LvSwGM2prLqltVYJQDjGJIQTypRvYgxUu75+Z5pbxpJc8n2d3Nv8/T1LwFC5e+KRDQ=="
-    }
 });
 
 const deleteFileFromS3 = async (fileName: string) => {
