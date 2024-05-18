@@ -6,9 +6,9 @@ import { prismadb } from "@/app/lib/db";
 const S3 = new S3Client({
     region: process.env.AWS_BUCKET_REGION,
     credentials: {
-        secretAccessKey: "xl1YsBOUJ/UGBu8KaDeKDbifx0cy4UfnOBNJHnsb",
-        accessKeyId: "ASIAZTV654JO2QZQQVD3",
-        sessionToken: "IQoJb3JpZ2luX2VjEFkaCXVzLXdlc3QtMiJGMEQCIDZDAF/BXMEuxY2kqvRwoS5lPQb8vbpE2ahw+qZTclgAAiBilOjuHf9SIotkGmQDb492urkq2aNzIzooOhKHYmWERiqtAgjC//////////8BEAAaDDY2MDc1MTYzOTEzMyIMouaMCtkBFBY648pYKoECTCl9hBPvUOQeHmfWG219KhtwDf8fC20YO73L0sF6uWATxfCAUyMbb9auatrD4dIJ6ltB3rrWytN+M52VrCr0Ux/YZVZ6J8yCXJlocaluoBMdQcxdCGR6hlxIlivKXCigf5qq8kClAv7eJLW8ztjR4foK56rb3jzQvvDPPIcCp1gc/SemNITxHirnVosQUghVJ0UXDBYl4kjpNQ75Efi1mdlm2U7TeY/+olVXxup0Bj0ocUdikciP0hof3BNAmMKd8FI3icbHuSwZ5ogYlqUm/hc6Z+P2ep6TY4FTno/4JHyMMn47jBhriH5IhWeG/HonYBVKDuYMQld5thTlq5mDKwIwu/SYsgY6ngGhZYC1q6H7rPpP4BAyXIn1C1rh1atk4yCXFUTxuaSE+6P8vH7QIM2aojVbaLIFnaBtCxejHA6KAHCpc6NjDwgoyVSOXXfGoakz6HQx4w5RLhKq7fErhl4J9ecd5EurBhsuvNALjhuiF/q555agTh2LObTq7c7lFDO39RxL94Mi+l2H5lIQc4T19wqEz70iyAcWEjV8R3I1Ukt+8rERVw=="
+        secretAccessKey: "tSDk9dWGiEV1dUAo/cP3SZKIJs5zP+N6n837InMI",
+        accessKeyId: "ASIAZTV654JOSLT2Q5EZ",
+        sessionToken: "IQoJb3JpZ2luX2VjEHoaCXVzLXdlc3QtMiJGMEQCIGwBYKo/m3pVO5vI/UUrzu8RLEGApat3knPiWGdUWagYAiAmT0ngFQAsDn5jD7X88WqDJJnHDxroBHO+rjnE7TSGaiqtAgjj//////////8BEAAaDDY2MDc1MTYzOTEzMyIM8q5DBzG+LcIsGwHNKoECFFkLHUbIMkC1H0iWk5uzGen+a2lqEimUI+DIvotSu+ds4SECu4kZ+L/gtAnpiobf3XS1Ys3Brfq+PCCBEKLwzrrcHbgRSLV6bGDkd6OKP5FBZ+NVsV3NMHHVNvFiUXY5Alt7G8iB5e1hWSPa0GbSPUzMP8yBM9fpCEgG/21vpEIXY/vKDLH06ihxdEftI3sIr8TTcreJhOyly3KwsUCHPZmy+Wu/DoAxEnviC1A656e6V7U8HLW6vwaUfI6IzEanFKZ/bFEmqdHtKqzEd6K9W/ANBqQI06e28QmBEYzKLqCMwpZcd6BOszC4Og48nFCxz+vdr6I5nrenxV6wnio55wAwj56gsgY6ngHSOdjibcw1aEVt8x8Bq7+3RKJvzqcDZq5+/Oy8nmpnM7b2L2krPeYKYwqlCZzmguLHmxpr1nSLYRMENJa7ErWLXaE0RveD/yx7wugkXabeG3ra67ynz0Un5r+OEJWHFkHQDAThq3/r9lhQxNp7LvSwGM2prLqltVYJQDjGJIQTypRvYgxUu75+Z5pbxpJc8n2d3Nv8/T1LwFC5e+KRDQ=="
     }
 });
 

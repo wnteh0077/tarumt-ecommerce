@@ -14,11 +14,13 @@
     "@gsap/react": "^2.1.1",
     "@prisma/client": "^5.8.1",
     "gsap": "^3.12.5",
+    "js-cookie": "^3.0.5",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@types/js-cookie": "^3.0.6",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
